@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.spring.dempspring.model.Employee;
-import com.demo.spring.dempspring.repository.EmployeeRepo;
+import com.demo.spring.dempspring.repository.EmployeeRepository;
 
 @RestController
 @RequestMapping(value = "/emp")
@@ -18,7 +18,7 @@ public class EmployeeController {
 
 
 @Autowired
-EmployeeRepo employeeRepo;
+EmployeeRepository employeeRepo;
 
   //http://localhost:port/emp/add
   @PostMapping("/add")
